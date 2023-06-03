@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Max kiana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo">Portfolio</a>
+        <div class="menu"></div>
+        <ul class="nav">
+            <li class="active"><a href="#Home">Home</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </header>
+    <section id="Home">
+        <div class="content">
+            <h2>Maxwell Kiana</h2>
+            <p>My name is Maxwell Kiana with a Bachelors in Information Systems and Technology from United States International University and a Diploma in Information Technology from Africa Nazarene University.</p>
+            <a href="" class="btn">Contact Me</a>
+        </div>
+        <img src="max.jpg" alt="" class="men">
+    </section>
+    <section id="Services">
+        <div class="sectext">
+            <h2>What I am great at</h2>
+            <p>Am a photographer, web developer and an android developer. With good creativity skills and problem solving skills</p>
+        </div>
+        <div class="content">
+            <div class="service-box">
+                <img src="camera.png" alt="">
+                <h3>Photography</h3>
+            </div>
+            <div class="service-box">
+                <img src="adobe-photoshop.png" alt="">
+                <h3>Photoshop</h3>
+            </div>
+            <div class="service-box">
+                <img src="coding.png" alt="">
+                <h3>Web Development</h3>
+            </div>
+            <div class="service-box">
+                <img src="mobile-development.png" alt="">
+                <h3>Mobile Development</h3>
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
+    <section id="Contact">
+        <div class="sectext">
+            <h2>Ways to Contact Me</h2>
+            <p>Am a photographer, web developer and an android developer. With good creativity skills and problem solving skills</p>
+        </div>
+        <div class="content">
+            <a href="#">
+                <ion-icon name="mail-open-outline"></ion-icon> Kianamuchiri@gmail.com
+            </a>
+            <a href="#">
+                <ion-icon name="call-outline"></ion-icon> +254 797684879
+            </a>
+            <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon> @kianamax
+            </a>
+            <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon> @kiana
+            </a>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let list = document.querySelectorAll('.nav li');
+
+        function active() {
+            list.forEach((i) =>
+                i.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((i) =>
+            i.addEventListener('click', active));
+
+        let menu = document.querySelector('.menu');
+        let header = document.querySelector('.header');
+        menu.onClick = function() {
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
